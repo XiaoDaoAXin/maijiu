@@ -1,0 +1,1229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/iconfont.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./lib/jquery-3.4.1.js"></script>
+    <script src="./js/common1.0.js"></script>
+    <script src="./js/index.js"></script>
+
+</head>
+
+<body>
+    <!-- 滚动出现的头部 -->
+    <div class="head" id="head">
+        <div class="content">
+            <img src="./img/header.png" alt="">
+            <div class="search_input">
+                <input type="text" placeholder="茅台飞天">
+                <div class="btn">搜索</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 右侧导航 -->
+    <div class="right_nav">
+        <div class="inner">
+            <a class="user_btn iconfont icon-Userpersonalinform" href=""> </a>
+            <a class="car iconfont icon-gouwuchekong2" href="">购物车</a>
+            <a class="juan iconfont icon-juan"  href="">
+                <div class="tips">
+                    <span class="sp1">我的优惠券</span>
+                    <span class="sp2">◆</span>
+                </div>
+            </a>
+            <a class="shoucang iconfont icon-shoucang" href="">
+                <div class="tips">
+                    <span class="sp1">我的收藏</span>
+                    <span class="sp2">◆</span>
+                </div>
+            </a>
+            <a class="twoCode iconfont icon-ico" href="">
+                <div class="tips">
+                    <!-- <span class="sp1">我的收藏</span> -->
+                    <span class="sp2">◆</span>
+                </div>
+            </a>
+            <a class="dianzan iconfont icon-qinziAPPtubiao-1" href=""></a>
+            <a class="kefu iconfont icon-kefu1" href="">
+                <div class="tips">
+                    <span class="sp1">在线客服</span>
+                    <span class="sp2">◆</span>
+                </div>
+            </a>
+            <a class="fankui iconfont icon-file-text-o" href="">
+                <div class="tips">
+                    <span class="sp1">用户反馈</span>
+                    <span class="sp2">◆</span>
+                </div>
+            </a>
+            <a id="goTop" class="toTop iconfont icon-icon_huaban" href="###">
+                <div class="tips">
+                    <span class="sp1">回到顶部</span>
+                    <span class="sp2">◆</span>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- top导航 -->
+    <div id="topNav">
+        <div class="content clearfix">
+            <div class="focusbtn">
+                <img src="./img/1.ewms.png" alt="">
+                <span> 购酒网APP </span>
+                <em> ﹀</em>
+                <p></p>
+            </div>
+
+            <ul class="navBox clearfix">
+                <li>
+                    <i>Hi,请</i>
+                    <a href="">登录</a>
+                    /
+                    <a href="">注册</a>
+                </li>
+                <li><a href="">我的订单</a></li>
+                <li><a href="">个人中心</a></li>
+                <li><a href="">在线客服</a></li>
+                <li><a href="">购酒公告</a></li>
+                <li><a href="">帮助</a></li>
+                <li><a href="">提意见</a></li>
+                <li class="tel">
+                    <a href="">
+                        <em>☏</em>
+                        400-722-1919
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- bigImg -->
+    <div id="bigImg">
+        <img src="./img/3.bigImg.jpg" alt="">
+    </div>
+
+    <!-- 图标 搜索框 购物车 -->
+    <div class="topItem clearfix">
+        <a class="logo" href="">
+            <img src="./img/logo1.jpg" alt="">
+        </a>
+        <a class="gif" href="./img/5.gif">
+            <img src="./img/5.gif" alt="">
+        </a>
+
+        <div class="topSearch">
+            <div class="search_input">
+                <input type="text" placeholder="茅台飞天">
+                <div class="btn">搜索</div>
+                <div class="tags clearfix">
+                    <a href="">茅台</a>
+                    <a href="">五粮液</a>
+                    <a href="">拉菲</a>
+                    <a href="">奔富</a>
+                    <a href="">黄尾袋鼠茅台</a>
+                    <a href="">剑南春</a>
+                    <a class="last" href="">泸州老窖</a>
+                </div>
+            </div>
+        </div>
+
+        <a class="topCar" href="">
+            <img src="./img/4.car.png" alt="">
+            <span>去购物车结算</span>
+            <i>></i>
+            <div class="num">3</div>
+        </a>
+    </div>
+
+    <!-- 商品导航 -->
+    <div class="itemNav">
+        <ul class="clearfix">
+            <li class="listNav">
+                <a href="">☰ &nbsp; 全 部 分 类</a>
+                <ul class="qbfl">
+                    <li class="yjxg">
+                        <a href="">
+                            <img src="./img/9.ax-icon.png" alt="">
+                            一键选购
+                        </a>
+                        <em>›</em>
+                        <div class="sec_box">
+                            <div class="box_l">
+                                <div class="list_box">
+                                    <div class="list_tit">购酒推荐</div>
+                                    <div class="list-msg clearfix">
+                                        <a class="color3 first" href="">特卖会</a>
+                                        <a class="color0" href="">高端收藏</a>
+                                        <a class="color1" href="">大坛酒专场</a>
+                                        <a class="color1" href="">整箱购</a>
+                                        <a class="color2" href="">婚宴酒</a>
+                                        <a class="color2 last" href="">年份老酒</a>
+                                    </div>
+                                </div>
+                                <div class="list_box">
+                                    <div class="list_tit">红酒专场</div>
+                                    <div class="list-msg clearfix">
+                                        <a class="first" href="">洋酒钜惠</a>
+                                        <a class="color3" href="">名庄直采</a>
+                                        <a class="color1 last" href="">大坛酒专场</a>
+                                    </div>
+                                </div>
+                                <div class="list_box box2 clearfix">
+                                    <div class="left">
+                                        <div class="list_tit">购酒推荐</div>
+                                        <div class="list-msg clearfix">
+                                            <a class="color3 first" href="">新鲜品藏</a>
+                                            <a class="color0" href="">聚会用餐</a>
+                                            <a class="color1" href="">清仓特卖</a>
+                                            <a class="color1 last" href="">居酒屋</a>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <div class="list_tit">特色专区</div>
+                                        <div class="list-msg clearfix">
+                                            <a class="color3 first last" href="">舒心酱酒</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box_r">
+                                <div class="top">
+                                    <img src="./img/19.茅台.jpg" alt="">
+                                    <img src="./img/20.wly.jpg" alt="">
+                                    <img src="./img/21.jnc.jpg" alt="">
+                                    <img src="./img/34.jg.jpg" alt="">
+                                    <img src="./img/22.lz.jpg" alt="">
+                                    <img src="./img/23.pf.jpg" alt="">
+                                    <img src="./img/23.z" alt="">
+                                    <img src="./img/24.lafei.jpg" alt="">
+                                    <img src="./img/25.zhs.jpg" alt="">
+                                </div>
+                                <div class="bottom">
+                                    <a href=""> <img src="./img/26.jz.jpg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="bj">
+                        <a href="">
+                            <img src="./img/10.bj-icon.png" alt="">
+                            白 酒
+                        </a>
+                        <em>›</em>
+                        <div class="sec_box">
+                            <div class="box_l">
+                                <div class="list_box">
+                                    <div class="list_tit">知名白酒品牌</div>
+                                    <div class="list-msg clearfix">
+                                        <a class="color3 first" href="">茅台</a>
+                                        <a class="color0" href="">五粮液</a>
+                                        <a class="color1" href="">剑南春</a>
+                                        <a class="color1" href="">泸州老窖</a>
+                                        <a class="color0" href="">郎酒</a>
+                                        <a class="color0 " href="">洋河</a>
+                                        <a class="color0 " href="">汾酒</a>
+                                        <a class="color0" href="">酒鬼</a>
+                                        <a class="color0" href="">水井坊</a>
+                                        <a class="color0" href="">习酒</a>
+                                        <a class="color0 first" href="">西凤</a>
+                                        <a class="color2" href="">珍酒</a>
+                                        <a class="color2" href="">古井贡酒</a>
+                                        <a class="color0" href="">董酒</a>
+                                        <a class="color0 " href="">金六福</a>
+                                        <a class="color0" href="">舍得</a>
+
+                                        <a class="color3 last" href="">更多</a>
+                                    </div>
+                                </div>
+                                <div class="list_box">
+                                    <div class="list_tit">地域白酒品牌</div>
+                                    <div class="list-msg clearfix">
+                                        <a class="first" href="">舒心</a>
+                                        <a class="color3" href="">白云边</a>
+                                        <a class="color1 last" href="">太白</a>
+                                        <a class="color0" href="">黄鹤楼</a>
+                                        <a class="color3" href="">天下福</a>
+                                        <a class="color1" href="">苏酒</a>
+                                        <a class="color0" href="">红星</a>
+                                        <a class="color0" href="">孔府家</a>
+                                        <a class="color0" href="">皖酒</a>
+                                        <a class="color0" href="">舒心</a>
+                                        <a class="color3 first" href="">扳倒井</a>
+                                        <a class="color1" href="">金门高粱</a>
+                                        <a class="color3 last" href="">更多</a>
+                                    </div>
+                                </div>
+                                <div class="list_box box2 clearfix">
+                                    <div class="left">
+                                        <div class="list_tit">香型</div>
+                                        <div class="list-msg clearfix">
+                                            <a class="color3 first" href="">酱香</a>
+                                            <a class="color0" href="">浓香</a>
+                                            <a class="color1" href="">清香型</a>
+                                            <a class="color1 last" href="">馥郁香型</a>
+                                            <a class="color3 first" href="">特香</a>
+                                            <a class="color0" href="">兼香</a>
+                                            <a class="color0" href="">芝麻香</a>
+                                            <a class="color2" href="">凤香</a>
+                                            <a class="color1" href="">更多</a>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <div class="list_tit">商务推荐</div>
+                                        <div class="list-msg clearfix">
+                                            <a class="color3 first last" href="">舒心酱酒</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box_r">
+                                <div class="top">
+                                    <img src="./img/27.jpg" alt="">
+                                    <img src="./img/28.jpg" alt="">
+                                    <img src="./img/29.jnc.jpg" alt="">
+                                    <img src="./img/30.lzlj.jpg" alt="">
+                                    <img src="./img/31.da.jpg" alt="">
+                                    <img src="./img/23.pf.jpg" alt="">
+                                    <img src="./img/32.lj.jpg" alt="">
+                                    <img src="./img/33.dfa.jpg" alt="">
+                                    <img src="./img/34.jg.jpg" alt="">
+                                </div>
+                                <div class="bottom">
+                                    <a href=""> <img src="./img/36.lz.jpg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="ptj">
+                        <a href="">
+                            <img src="./img/11.png" alt="">
+                            葡 萄 酒
+                        </a>
+                        <em>›</em>
+                        <div class="sec_box">
+                            <div class="box_l">
+                                <div class="list_box">
+                                    <div class="list_tit">知名品牌</div>
+                                    <div class="list-msg clearfix">
+                                        <a class="color3 first" href="">奔富</a>
+                                        <a class="color0" href="">拉菲</a>
+                                        <a class="color1" href="">黄袋鼠</a>
+                                        <a class="color1" href="">红魔鬼</a>
+                                        <a class="color0" href="">梧桐家族</a>
+                                        <a class="color0 " href="">卡斯特</a>
+                                        <a class="color0 " href="">长城</a>
+                                        <a class="color0" href="">黄轩</a>
+                                        <a class="color0" href="">法比纳古堡</a>
+                                        <a class="color0" href="">杰卡斯</a>
+                                        <a class="color0 first" href="">皇朝</a>
+                                        <a class="color2" href="">香格里拉</a>
+                                        <a class="color2" href="">威龙</a>
+                                        <a class="color0" href="">帝力</a>
+                                        <a class="color0 " href="">张裕</a>
+
+                                        <a class="color3 last" href="">更多</a>
+                                    </div>
+                                </div>
+                                <div class="list_box">
+                                    <div class="list_tit">国家</div>
+                                    <div class="list-msg clearfix">
+                                        <a class="first" href="">法国</a>
+                                        <a class="color3" href="">美国</a>
+                                        <a class="color1 last" href="">奥地利</a>
+                                        <a class="color0" href="">意大利</a>
+                                        <a class="color3" href="">法国</a>
+                                        <a class="color1" href="">西班牙</a>
+                                        <a class="color0" href="">智利</a>
+                                        <a class="color0" href="">南非</a>
+                                        <a class="color0" href="">中国</a>
+                                        <a class="color3 last" href="">更多</a>
+                                    </div>
+                                </div>
+                                <div class="list_box box2 clearfix">
+                                    <div class="left">
+                                        <div class="list_tit">店长推荐</div>
+                                        <div class="list-msg clearfix">
+                                            <a class="color3 first" href="">1855年列级名庄</a>
+                                            <a class="color0" href="">中级庄</a>
+                                            <a class="color1" href="">产区精选</a>
+                                            <a class="color1 first" href="">拉菲专区</a>
+                                            <a class="color3" href="">奔富专区</a>
+                                            <a class="color1" href="">更多</a>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <div class="list_tit">类别</div>
+                                        <div class="list-msg clearfix">
+                                            <a class="color3 first" href="">红葡萄酒</a>
+                                            <a class="color0 " href="">白葡萄酒</a>
+                                            <a class="color0" href="">桃红葡萄酒</a>
+                                            <a class="color0 first" href="">起泡酒</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box_r">
+                                <div class="top">
+                                    <img src="./img/37.cq.jpg" alt="">
+                                    <img src="./img/38.pf.jpg" alt="">
+                                    <img src="./img/39.lafei.jpg" alt="">
+                                    <img src="./img/40.fbn.jpg" alt="">
+                                    <img src="./img/41.ds.jpg" alt="">
+                                    <img src="./img/42.hmg.jpg" alt="">
+                                    <img src="./img/43.zy.jpg" alt="">
+                                    <img src="./img/44.kst.jpg" alt="">
+                                    <img src="./img/45.js" alt="">
+                                </div>
+                                <div class="bottom">
+                                    <a href=""> <img src="./img/46.dsda.jpg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="yj">
+                        <a href="">
+                            <img src="./img/12.yj-icon.png" alt="">
+                            洋 酒
+                        </a>
+                        <em>›</em>
+                        <div class="sec_box">
+                            <div class="box_l">
+                                <div class="list_box">
+                                    <div class="list_tit">品牌</div>
+                                    <div class="list-msg clearfix">
+                                        <a class="color3 first" href="">尊尼获加</a>
+                                        <a class="color0" href="">芝华士</a>
+                                        <a class="color1" href="">杰克丹尼</a>
+                                        <a class="color1" href="">人头马</a>
+                                        <a class="color0" href="">马爹利</a>
+                                        <a class="color0 " href="">轩尼诗</a>
+                                        <a class="color0 " href="">夜线</a>
+                                        <a class="color0" href="">格兰菲迪</a>
+                                        <a class="color0 first" href="">哈三得利</a>
+                                        <a class="color0" href="">帝摩 </a>
+                                        <a class="color0" href="">吉拉</a>
+                                        <a class="color2" href="">培恩</a>
+                                        <a class="color2" href="">瑞典绝对</a>
+                                        <a class="color0" href="">百龄坛</a>
+
+                                        <a class="color3 last" href="">更多</a>
+                                    </div>
+                                </div>
+                                <div class="list_box">
+                                    <div class="list_tit">品牌</div>
+                                    <div class="list-msg clearfix">
+                                        <a class="first" href="">白兰地 Brandy</a>
+                                        <a class="color3" href="">调和威士忌</a>
+                                        <a class="color1 last" href="">伏特加 Vodka</a>
+                                        <a class="color0" href="">朗姆酒 Rum</a>
+                                        <a class="color3" href="">金酒 Gin</a>
+                                        <a class="color1 first" href="">利口酒 Liqueur</a>
+                                        <a class="color0" href="">单一麦芽威士忌</a>
+                                        <a class="color0" href="">龙舌兰 Tequila</a>
+                                        <a class="color3 last" href="">更多</a>
+                                    </div>
+                                </div>
+                                <div class="list_box box2 clearfix">
+                                    <div class="left">
+                                        <div class="list_tit">商务推荐</div>
+                                        <div class="list-msg clearfix">
+                                            <a class="color3 first last" href="">1855年列级名庄</a>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <div class="list_tit">类别</div>
+                                        <div class="list-msg clearfix">
+                                            <a class="color3 first last" href="">红葡萄酒</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box_r">
+                                <div class="top">
+                                    <img src="./img/47.zhs.jpg" alt="">
+                                    <img src="./img/48.zn.jpg" alt="">
+                                    <img src="./img/49.nlk.jpg" alt="">
+                                    <img src="./img/50.nlt.jpg" alt="">
+                                    <img src="./img/51.xns.jpg" alt="">
+                                    <img src="./img/52.mdl.jpg" alt="">
+                                    <img src="./img/53.rtm.jpg" alt="">
+                                    <img src="./img/54.ly.jpg" alt="">
+                                    <!-- <img src="./img/45.js" alt=""> -->
+                                </div>
+                                <div class="bottom">
+                                    <a href=""> <img src="./img/55.ly.jpg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="hj">
+                        <a href="">
+                            <img src="./img/13.hj-icon.png" alt="">
+                            黄 酒
+                        </a>
+                        <em>›</em>
+                        <div class="sec_box">
+                            <div class="box_l">
+                                <div class="list_box">
+                                    <div class="list_tit">品牌</div>
+                                    <div class="list-msg clearfix">
+                                        <a class="color3 first" href="">古越龙山</a>
+                                        <a class="color0" href="">女儿红</a>
+                                        <a class="color1" href="">同里红</a>
+                                        <a class="color1" href="">清鉴</a>
+                                        <a class="color0" href="">和酒</a>
+                                        <a class="color0 " href="">会稽山</a>
+                                        <a class="color0 " href="">塔牌</a>
+                                        <a class="color0" href="">钱塘人家</a>
+                                        <a class="color0 " href="">马头墙</a>
+                                        <a class="color0 first" href="">石库门 </a>
+                                        <a class="color0" href="">梁祝</a>
+
+                                        <a class="color3 last" href="">更多</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box_r">
+                                <div class="top">
+                                    <img src="./img/56.jpg" alt="">
+                                    <img src="./img/57.nrh.jpg" alt="">
+                                    <img src="./img/58.daf.jpg" alt="">
+                                    <img src="./img/59.dase.jpg" alt="">
+                                    <img src="./img/60.555.jpg" alt="">
+                                    <img src="./img/61.hjs.jpg" alt="">
+                                    <img src="./img/62.mtq.jpg" alt="">
+                                    <img src="./img/63.hsz.jpg" alt="">
+                                    <!-- <img src="./img/45.js" alt=""> -->
+                                </div>
+                                <div class="bottom">
+                                    <a href=""> <img src="./img/64.twb.jpg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="qj">
+                        <a href="">
+                            <img src="./img/14.ysj-icon.png" alt="">
+                            清 酒
+                        </a>
+                        <em>›</em>
+                        <div class="sec_box">
+                            <div class="box_l">
+                                <div class="list_box">
+                                    <div class="list_tit">品牌</div>
+                                    <div class="list-msg clearfix">
+                                        <a class="color3 first" href="">一本义</a>
+                                        <a class="color0" href=""> 菊正宗</a>
+                                        <a class="color1" href="">清洲樱</a>
+                                        <a class="color1" href="">日本盛</a>
+                                        <a class="color0" href="">月桂冠</a>
+                                        <a class="color0 " href="">松竹梅</a>
+                                        <a class="color0 " href="">富之山</a>
+                                        <a class="color0" href="">天下平和鬼</a>
+
+                                        <a class="color3 last" href="">更多</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box_r">
+                                <div class="top">
+                                    <img src="./img/65.ybx.jpg" alt="">
+                                    <img src="./img/66.bx.jpg" alt="">
+                                    <img src="./img/67.rs" alt="">
+                                    <img src="./img/68.qz.jpg" alt="">
+                                    <!-- <img src="./img/60.555.jpg" alt="">
+                                        <img src="./img/61.hjs.jpg" alt="">
+                                        <img src="./img/62.mtq.jpg" alt="">
+                                        <img src="./img/63.hsz.jpg" alt=""> -->
+                                    <!-- <img src="./img/45.js" alt=""> -->
+                                </div>
+                                <div class="bottom">
+                                    <a href=""> <img src="./img/69.444.jpg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="pj">
+                        <a href="">
+                            <img src="./img/15.pj-icon.png" alt="">
+                            啤 酒
+                        </a>
+                        <em>›</em>
+                        <div class="sec_box">
+                            <div class="box_l">
+                                <div class="list_box">
+                                    <div class="list_tit">品牌</div>
+                                    <div class="list-msg clearfix">
+                                        <a class="color3 first" href="">福佳</a>
+                                        <a class="color0" href="">科罗娜</a>
+                                        <a class="color1" href="">1664</a>
+                                        <a class="color1" href="">督威</a>
+                                        <a class="color0" href="">朝日</a>
+                                        <a class="color0 " href="">健力士</a>
+                                        <a class="color0 " href="">青岛</a>
+                                        <a class="color0" href="">百威</a>
+
+                                        <a class="color3 last" href="">更多</a>
+                                    </div>
+                                </div>
+                                <div class="list_box">
+                                    <div class="list_tit">价位</div>
+                                    <div class="list-msg clearfix">
+                                        <a class="first" href="">1-99元</a>
+                                        <a class="color3" href="">100-199元</a>
+                                        <a class="color1 last" href="">200-299元</a>
+                                        <a class="color0" href="">300及以上</a>
+                                        <a class="color3 last" href="">更多</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box_r">
+                                <div class="top">
+                                    <img src="./img/47.zhs.jpg" alt="">
+                                    <img src="./img/48.zn.jpg" alt="">
+                                    <img src="./img/49.nlk.jpg" alt="">
+                                    <img src="./img/50.nlt.jpg" alt="">
+                                    <img src="./img/51.xns.jpg" alt="">
+                                    <img src="./img/52.mdl.jpg" alt="">
+                                    <img src="./img/53.rtm.jpg" alt="">
+                                    <img src="./img/54.ly.jpg" alt="">
+                                    <!-- <img src="./img/45.js" alt=""> -->
+                                </div>
+                                <div class="bottom">
+                                    <a href=""> <img src="./img/70.555.jpg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="jjzb">
+                        <a href="">
+                            <img src="./img/16.jjzb-icon.png" alt="">
+                            酒具周边
+                        </a>
+                        <em>›</em>
+                        <div class="sec_box">
+                            <div class="box_l">
+                                <div class="list_box">
+                                    <div class="list_tit">分类</div>
+                                    <div class="list-msg clearfix">
+                                        <a class="color3 first" href="">酒杯</a>
+                                        <a class="color0" href="">酒刀</a>
+                                        <a class="color1" href="">醒酒器</a>
+                                        <a class="color1" href="">书籍</a>
+                                        <a class="color3 last" href="">更多</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box_r">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./img/17.xp-icon.png" alt="">
+                            新 品
+                        </a>
+                        <em>›</em>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./img/18.qingcang.png" alt="">
+                            清 仓
+                        </a>
+                        <em>›</em>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="">首页</a></li>
+            <li><a href="">特卖会</a></li>
+            <li><a href="">进口馆</a></li>
+            <li><a href="">居酒屋</a></li>
+            <li><a href="">商家采销</a></li>
+            <li><a href="">高端收藏</a></li>
+            <li><a href="">茅台年份酒</a></li>
+            <li><a href="">尾货直批</a></li>
+            <a class="tejia" href="">
+                <img src="./img/8.tejia.gif" alt="">
+            </a>
+        </ul>
+    </div>
+
+    <!-- 大轮播图 -->
+    <div class="banner_box">
+        <div id="big_banner"></div>
+        <div class="prev"></div>
+        <div class="next"></div>
+        <ul class="btn">
+            <li class="active">1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+        </ul>
+        <a class="a1" href=""></a>
+        <a class="a2" href=""></a>
+    </div>
+
+    <div class="nav_note clearfix">
+        <span><i></i>正品保证 放心购买 </span>
+        <span><i></i>满100即享全国免邮费 </span>
+        <span><i></i>破损包赔 售后无忧 </span>
+        <a href=""><i></i>APP下单更优惠</a>
+    </div>
+
+    <!-- 限购栏 -->
+    <div class="xiangou">
+        <ul class="content clearfix">
+            <li>
+                <a href="">
+                    <img src="./img/1.qg1.jpg" alt="">
+                    <div class="msg">
+                        <span>43度 茅台喜宴酒 中国红 （ 2019年产 ）500ml</span>
+                        <em>849元</em>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="./img/1.qg2.jpg" alt="">
+                    <div class="msg">
+                        <span>52度 五粮窖龄酒 20年 500ml</span>
+                        <em>376元</em>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="./img/1.qg3.jpg" alt="">
+                    <div class="msg">
+                        <span>德国 德森森 兰贵人 半甜白葡萄酒 750ml*6瓶【整箱装】 </span>
+                        <em>398元</em>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="./img/1.qg4.jpg" alt="">
+                    <div class="msg">
+                        <span>【整箱装】52度 剑南春 金牌特曲（2013年产）500ml*6瓶 </span>
+                        <em>359元</em>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="./img/1.qg5.jpg" alt="">
+                    <div class="msg">
+                        <span>52度 泸州老窖 精品特曲 限量珍藏版 （ 2010年产 ）500ml</span>
+                        <em>319元</em>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="./img/1.qg6.jpg" alt="">
+                    <div class="msg">
+                        <span>法国 拉菲 传说波尔多 AOC级红葡萄酒 750ml*6瓶【整箱装】</span>
+                        <em>359元</em>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="./img/1.qg7.jpg" alt="">
+                    <div class="msg">
+                        <span>53度 郎酒 改革开放 四十周年 纪念酒 500ml </span>
+                        <em>208元</em>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- 主要内容区 -->
+    <div class="main">
+        <div class="maotai_box common_box clearfix">
+            <div class="title clearfix">
+                <span class="fl">茅台酒超值区</span>
+                <a href="">查看全部<em>＞</em></a>
+            </div>
+            <div class="list clearfix">
+                <div class="left">
+                    <a href="">
+                        <img id="fugu" src="" alt="">
+                    </a>
+                    <a href="">
+                        <img id="yiyi" src="" alt="">
+                    </a>
+                </div>
+                <div class="right clearfix" id="maotai_list">
+                    <!-- <a href="">
+                       <i>买一送一 送原品</i>
+                       <img src="./img/2.maotai3.jpg" alt="">
+                       <p>53度 茅台 王子传承2000 （ 2017年产 ）500ml </p>
+                       <span>368元</span>
+                   </a> -->
+
+                </div>
+            </div>
+        </div>
+
+        <div class="laojiu_box common_box clearfix">
+            <div class="title">
+                <span class="fl">年份老酒区</span>
+                <a href="">查看全部<em>＞</em></a>
+            </div>
+            <div class="list clearfix">
+                <div class="left">
+                    <a href="">
+                        <img id="baishan" src="" alt="">
+                    </a>
+                    <a href="">
+                        <img id="yidai" src="" alt="">
+                    </a>
+                </div>
+                <div class="right" id="laojiu_list">
+                    <!-- <a href="">
+                            <i>买一送一 送原品</i>
+                            <img src="./img/2.maotai3.jpg" alt="">
+                            <p>53度 茅台 王子传承2000 （ 2017年产 ）500ml </p>
+                            <span>368元</span>
+                    </a> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="baijiu_box common_box clearfix">
+            <div class="title clearfix">
+                <span class="fl">白酒折扣区</span>
+                <a href="">查看全部<em>＞</em></a>
+            </div>
+            <div class="list clearfix">
+                <div class="left">
+                    <a href="">
+                        <img id="baijiu1" src="" alt="">
+                    </a>
+                    <a href="">
+                        <img id="yuanpin" src="" alt="">
+                    </a>
+                </div>
+                <div class="right" id="baijiu_list">
+                    <!-- <a href="">
+                                <i>买一送一 送原品</i>
+                                <img src="./img/2.maotai3.jpg" alt="">
+                                <p>53度 茅台 王子传承2000 （ 2017年产 ）500ml </p>
+                                <span>368元</span>
+                        </a> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="putaojiu_box common_box clearfix">
+            <div class="title clearfix">
+                <span class="fl">葡萄酒超值区</span>
+                <a href="">查看全部<em>＞</em></a>
+            </div>
+            <div class="list clearfix">
+                <div class="left">
+                    <a href="">
+                        <img id="putaojiu1" src="" alt="">
+                    </a>
+                    <a href="">
+                        <img id="putaojiu2" src="" alt="">
+                    </a>
+                </div>
+                <div class="right" id="putaojiu_list">
+                    <!-- <a href="">
+                                <i>买一送一 送原品</i>
+                                <img src="./img/2.maotai3.jpg" alt="">
+                                <p>53度 茅台 王子传承2000 （ 2017年产 ）500ml </p>
+                                <span>368元</span>
+                        </a> -->
+                </div>
+            </div>
+        </div>
+
+        <!-- 洋酒热卖区 -->
+        <div class="yangjiu_box">
+            <div class="title clearfix">
+                <span class="fl">洋酒热卖区</span>
+                <a href="">查看全部<em>＞</em></a>
+            </div>
+            <ul class="list clearfix">
+                <li>
+
+                </li>
+                <li>
+                    <i>进口洋酒</i>
+                    <img src="./img/yangjiu2.jpg" alt="">
+                    <p>法国 人头马 VSOP 特优香槟干邑白兰地 700ml </p>
+                    <span>248元</span>
+                </li>
+                <li>
+                    <i>格调洋酒</i>
+                    <img src="./img/yangjiu3.jpg" alt="">
+                    <p>英国 帝摩 大摩 雪茄三桶苏格兰 单一麦芽威士忌 700ml</p>
+                    <span>888元</span>
+                </li>
+                <li>
+                    <i>单一纯麦</i>
+                    <img src="./img/yangjiu4.jpg" alt="">
+                    <p>英国 麦卡伦 12年单一纯麦威士忌 700ml </p>
+                    <span>568元</span>
+                </li>
+                <li>
+                    <i>好酒好价</i>
+                    <img src="./img/yangjiu5.jpg" alt="">
+                    <p>瑞典 绝对风味伏特加（覆盆莓味） 700ml</p>
+                    <span>98元</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 店长推荐 -->
+        <div class="dztj_box">
+            <div class="title clearfix">
+                <span class="fl">店长推荐</span>
+                <a href="">查看全部<em>＞</em></a>
+            </div>
+            <ul class="list clearfix">
+                <li>
+                    <img src="./img/dianzhang1.jpg" alt="">
+                    <p>法国 人头马 VSOP 特优香槟干邑白兰地 700ml </p>
+                    <span>248元</span>
+                    <i>255人好评</i>
+                </li>
+                <li>
+                    <img src="./img/dianzhang2.jpg" alt="">
+                    <p>53度 茅台 孝道酒 （ 2017年产 ）500ml</p>
+                    <span>259元</span>
+                    <i>71 人好评</i>
+                </li>
+                <li>
+                    <img src="./img/dianzhang3.jpg" alt="">
+                    <p>52度 五粮液 人民大会堂 水晶装 500ml</p>
+                    <span>899元</span>
+                    <i>93 人好评</i>
+                </li>
+                <li>
+                    <img src="./img/dianzhang4.jpg" alt="">
+                    <p>53度 茅台 孝道酒 （ 2017年产 ）500ml</p>
+                    <span>259元</span>
+                    <i>71 人好评</i>
+                </li>
+                <li>
+                    <img src="./img/dianzhang5.jpg" alt="">
+                    <p>53度 茅台 贵州大曲酒 80年代 金酱 （ 2018年产 ）500ml</p>
+                    <span>139元</span>
+                    <i>52人好评</i>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 酒友热评商品  -->
+        <div class="jyrp_box">
+            <div class="title clearfix">
+                <span class="fl">酒友热评商品</span>
+                <a href="">查看全部<em>＞</em></a>
+            </div>
+            <ul class="list clearfix">
+                <li>
+                    <img src="./img/reping1.png" alt="">
+                    <p>原箱，已经买了好多次了，一直很满意，点赞购酒网</p>
+                    <span>来自181***0857的评价</span>
+                    <div>
+                        <i>53度 茅台 赖茅（传承）蓝色 （ 2019年产 ）500ml</i> <i class="price">279元</i>
+                    </div>
+                </li>
+                <li>
+                    <img src="./img/reping2.jpg" alt="">
+                    <p>不错，店家发货飞快，物流也快，过年接待客人用的</p>
+                    <span>来自187***3589的评价</span>
+                    <div>
+                        <i>法国 拉菲 传奇波尔多AOC 红葡萄酒 750ml*6瓶【整箱装】</i> <i class="price">388元</i>
+                    </div>
+                </li>
+                <li>
+                    <img src="./img/reping3.png" alt="">
+                    <p>发货速度很快，包装也很严实，没有破损，非常不错，相信购酒网</p>
+                    <span>来自181***0857的评价</span>
+                    <div>
+                        <i>52度 五粮液 虎符令 500ml</i> <i class="price">999元</i>
+                    </div>
+                </li>
+                <li>
+                    <img src="./img/reping4.jpg" alt="">
+                    <p>经常买他家酒，味道纯正是正品，家人也都很喜欢，满意，喝完继续来这里买，比超市实惠很多</p>
+                    <span>来自136***1105的评价</span>
+                    <div>
+                        <i>美国 杰克丹尼 田纳西州威士忌 700ml</i> <i class="price">165元</i>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 视频 -->
+        <ul class="shipin clearfix">
+            <div class="title clearfix">
+                <span class="fl">酒友热评商品</span>
+            </div>
+            <li>
+                <img src="./img/shipin1.jpg" alt="">
+                <p>购酒网（上海）供应链管理总部简介</p>
+            </li>
+            <li>
+                <img src="./img/shipin2.jpg" alt="">
+                <p>五粮迎宾酒 诚迎天下客</p>
+            </li>
+            <li>
+                <img src="./img/shipin3.jpg" alt="">
+                <p>茅台镇舒心酱酒微电影</p>
+            </li>
+            <li>
+                <img src="./img/shipin4.jpg" alt="">
+                <p>一分钟教你如何把茶调成高逼格鸡尾酒</p>
+            </li>
+        </ul>
+
+        <!--尾部-s-->
+        <div class="v6_footer v6_clear">
+            <div class="footerMid">
+                <div class="footerMid_t footer_center" style="height: 163px;">
+                    <div alt="" class="footer_tel fl png_bg" style="margin-top: 60px;">
+                    </div>
+
+                    <a onclick="NTKF.im_openInPageChat('kf_9250_1462524671271')" target="_blank" class="footer_serv fl"
+                        rel="nofollow" style="margin-top: 100px;">
+                        <img src="./img/onlineServ.png" alt="" class="png_bg" style="cursor: pointer;">
+                    </a>
+
+                    <div class="fr qrCodeBox">
+                        <p class="fl"
+                            style=" height: 130px;vertical-align: middle;margin-top: 30px;line-height: 2;margin-right: 0px;">
+                            超万平方米仓储体验店<br>
+                            上海松江区茂盛路202弄18号<br>
+                            客服邮箱：kf@goujiuwang.com<br>
+
+                        </p>
+                        <div class="fr" style="color: white;width: 193px;text-align: -webkit-center;">
+                            <img alt="" class="footer_qrCode" src="./img/qrcode_06.jpg" original="/Images/qrcode_06.jpg"
+                                style="display:block; width:120px; height:120px">
+                            <br>扫码二维码 享更多手机专享优惠</div>
+                    </div>
+                </div>
+                <div class="footer_link footer_center" style="margin-top: 20px;">
+                    <dl class="firstDl">
+                        <dt><b class="zhinan"></b>新手指南</dt>
+
+                        <dd>
+                            <a href="http://www.gjw.com/help/show-id-47.htm" rel="nofollow">
+                                用户协议</a>
+                        </dd>
+
+                        <dd>
+                            <a href="http://www.gjw.com/help/show-id-42.htm" rel="nofollow">
+                                常见问题</a>
+                        </dd>
+
+                        <dd>
+                            <a href="http://www.gjw.com/help/show-id-39.htm" rel="nofollow">
+                                网站购物流程</a>
+                        </dd>
+
+                        <dd>
+                            <a href="http://www.gjw.com/help/show-id-48.htm" rel="nofollow">
+                                会员制度</a>
+                        </dd>
+
+                    </dl>
+                    <dl>
+                        <dt><b class="zhinan"></b>如何付款</dt>
+
+                        <dd>
+                            <a href="http://www.gjw.com/help/show-id-4.htm" rel="nofollow">
+                                如何付款</a>
+                        </dd>
+
+                        <dd>
+                            <a href="http://www.gjw.com/help/show-id-5.htm" rel="nofollow">
+                                发票制度说明</a>
+                        </dd>
+
+                        <dd>
+                            <a href="http://www.gjw.com/help/show-id-43.htm" rel="nofollow">
+                                电子券说明</a>
+                        </dd>
+
+                        <dd>
+                            <a href="http://www.gjw.com/help/show-id-53.htm" rel="nofollow">
+                                虚拟账户支付</a>
+                        </dd>
+
+                    </dl>
+                    <dl>
+                        <dt><b class="zhinan"></b>配送方式</dt>
+
+                        <dd>
+                            <a href="http://www.gjw.com/help/show-id-8.htm" rel="nofollow">
+                                配送收费标准</a>
+                        </dd>
+
+                        <dd>
+                            <a href="http://www.gjw.com/help/show-id-44.htm" rel="nofollow">
+                                配送时间</a>
+                        </dd>
+
+                        <dd>
+                            <a href="http://www.gjw.com/help/show-id-7.htm" rel="nofollow">
+                                货到付款支持城市</a>
+                        </dd>
+
+                        <dd>
+                            <a href="http://www.gjw.com/help/show-id-113.htm" rel="nofollow">
+                                实体加盟服务商</a>
+                        </dd>
+
+                    </dl>
+                    <dl>
+                        <dt><b class="zhinan"></b>售后服务</dt>
+
+                        <dd>
+                            <a href="http://www.gjw.com/help/show-id-9.htm" rel="nofollow">
+                                如何办理退换货</a>
+                        </dd>
+
+                        <dd>
+                            <a href="http://www.gjw.com/help/show-id-10.htm" rel="nofollow">
+                                如何退换货</a>
+                        </dd>
+
+                        <dd>
+                            <a onclick="NTKF.im_openInPageChat('kf_9250_1462524671271')" style="cursor: pointer;"
+                                rel="nofollow">联系客服</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><b class="zhinan"></b>关于我们</dt>
+
+                        <dd>
+                            <a href="http://www.gjw.com/jituan/default.html" rel="nofollow">
+                                了解购酒网</a>
+                        </dd>
+
+                        <dd>
+                            <a href="http://www.gjw.com/help/show-id-45.htm" rel="nofollow">
+                                招兵买马</a>
+                        </dd>
+
+                        <dd>
+                            <a href="http://www.gjw.com/help/show-id-18.htm" rel="nofollow">
+                                联系我们</a>
+                        </dd>
+
+                        <dd>
+                            <a href="http://www.gjw.com/help/show-id-20.htm" rel="nofollow">
+                                隐私声明</a>
+                        </dd>
+
+                        <dd>
+                            <a href="/linkShowList.htm">友情链接</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>合作共赢</dt>
+                        <dd>
+                            <a href="http://www.gjw.com/Brand.htm">
+                                <font color="yellow">品牌馆</font>
+                            </a>
+                        </dd>
+                        <dd>
+                            <a href="http://www.gjw.com/help/caigou.htm" rel="nofollow">
+                                <font color="yellow">
+                                    大客户采购 new</font>
+                            </a>
+                        </dd>
+                        <dd>
+                            <a href="http://www.gjw.com/help/tuiguang.htm" rel="nofollow">
+                                <font color="yellow">
+                                    网站推广 new</font>
+                            </a>
+                        </dd>
+                        <dd>
+                            <a href="http://www.gjw.com/help/hezuo.htm" rel="nofollow">
+                                <font color="yellow">
+                                    供应商供货 new</font>
+                            </a>
+                        </dd>
+                        <dd>
+                            <a href="http://www.gjw.com/help/laojiu" rel="nofollow">
+                                <font color="yellow">
+                                    老酒鉴真及回购 new</font>
+                            </a>
+                        </dd>
+
+                    </dl>
+                </div>
+            </div>
+            <div class="mid_box copyright">
+                <div id="pFriendlink1" class="frendLinkBox">
+                    <div class="tempWrap" style="overflow:hidden; position:relative; height:32px">
+                        <ul class="friendLinkList">
+                            <li class="clone" style="height: 32px;">
+                                <a href="http://brand.gjw.com/">酒水知识</a><span>|</span>
+                                <a href="http://bbs.gjw.com/">购酒论坛</a><span>|</span>
+                                <a href="http://www.gjw.com/brand/maotai.htm">茅台</a><span>|</span>
+                                <a href="http://www.jiutw.com">中国酒投网</a><span>|</span>
+                                <a href="http://www.1zw.com">9块9包邮</a><span>|</span>
+                                <a href="http://mingjiu.3158.cn/">酒水加盟</a><span>|</span>
+                                <a href="http://china.globrand.com">品牌加盟网</a><span>|</span>
+                                <a href="http://www.zhaoshangbao.com">建材加盟</a><span>|</span>
+                                <a href="http://www.shaojiu.com">烧酒网</a><span>|</span>
+                                <a href="http://hao.qudao.com/">商机网 </a><span>|</span>
+                                <a href="http://guangzhou.anjuke.com">广州房产信息网</a><span>|</span>
+                                <a href="http://www.youdaili.net/">代理ip</a><span>|</span>
+                                <a href="http://faq.s.cn/">名鞋库</a><span>|</span>
+                                <a href="http://www.easeeyes.com/">隐形眼镜</a><span>|</span>
+                                <a href="http://www.9928.tv/ ">美酒网</a><span>|</span>
+                                <a href="http://www.dv37.com/">创业</a><span>|</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <p>
+                    Copyright® 2009-2019 gjw.com, All Rights Reserved 购酒网(上海)供应链管理有限公司 版权所有
+                </p>
+                <div class="authentication">
+                    <a class="beian" href="http://www.miibeian.gov.cn" rel="nofollow"></a>
+                    <a class="depart" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011702000287"
+                        rel="nofollow"></a>
+                    <a class="gsxz"
+                        href="http://218.242.124.22:8081/businessCheck/verifKey.do?showType=extShow&serial=9031000020160415220120000000584000-SAIC_SHOW_310000-20120216155829988069&signData=MEQCIHdFdWHpPbko0f8zieSgVzkIGrx30wLu9nu+i+tifLCeAiBTuBq9FLb8/jjnUfw7sAmd0Fy7VubSJ3TE9MMccdyWJg=="
+                        rel="nofollow"></a>
+                    <a style="margin-left: 10px;background-position: -360px 0;"
+                        href="http://scjgj.sh.gov.cn/platform/survey/step1_phone" rel="nofollow"></a>
+                    <!--<a style="background: white;"  class="1" target="_blank"  rel="nofollow"  href="http://scjgj.sh.gov.cn/platform/survey/step1_phone">
+                          <img src="/Images/gsj_wp.jpg" alt=""  style="cursor: pointer;   width: 80px;">
+                      </a>-->
+
+                </div>
+            </div>
+        </div>
+        <!--尾部-e-->
+
+
+
+
+    </div>
+</body>
+
+</html>
