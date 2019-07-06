@@ -1,0 +1,280 @@
+input {
+  border: 0px;
+}
+
+body {
+  font: 12px/1.5 tahoma, arial, 'Hiragino Sans GB', '\5b8b\4f53', sans-serif;
+}
+
+.header {
+  width: 100%;
+  border-bottom: 1px solid #c5c5c5;
+}
+.header .mid {
+  width: 980px;
+  height: 90px;
+  background-color: #ffffff;
+  margin: auto;
+}
+.header .mid > a {
+  float: left;
+  margin-top: 20px;
+  color: #333333;
+}
+
+.login_line {
+  margin-top: 28px;
+  height: 30px;
+  line-height: 30px;
+  float: right;
+  text-align: left;
+}
+.login_line a {
+  display: inline-block;
+  margin-right: 30px;
+  color: #333333;
+}
+.login_line a .set {
+  background: url(../img/loginIcon.gif) no-repeat -1px -1px;
+}
+.login_line a .icon {
+  display: inline-block;
+  margin-top: -3px;
+  margin-right: 5px;
+  vertical-align: middle;
+  width: 17px;
+  height: 17px;
+}
+.login_line a:nth-child(1) {
+  margin-right: 3px;
+}
+.login_line a:last-child {
+  margin-right: 10px;
+}
+.login_line #blue {
+  color: #325e8f;
+  cursor: pointer;
+}
+.login_line #red {
+  color: #cf0404;
+}
+.login_line #red .service {
+  background: url(../img/loginIcon.gif) no-repeat -25px -1px;
+}
+.login_line #red .icon {
+  display: inline-block;
+  margin-top: -3px;
+  margin-right: 5px;
+  vertical-align: middle;
+  width: 17px;
+  height: 17px;
+}
+
+.main {
+  width: 100%;
+  padding-top: 20px;
+  position: relative;
+  background-image: url(../img/login_bg.gif);
+}
+.main .mid {
+  margin: auto;
+  width: 960px;
+  height: 550px;
+  background: #fff;
+  border: 6px solid rgba(199, 199, 199, 0.7);
+}
+.main .mid .left {
+  float: left;
+  height: 570px;
+  border-right: 1px solid #dcdcdc;
+}
+.main .mid .right {
+  float: left;
+  display: block;
+  margin-top: 83px;
+  margin-left: 35px;
+  width: 300px;
+  height: 356px;
+  text-align: center;
+}
+.main .mid .right img {
+  width: 300px;
+  height: 356px;
+}
+.main .mid .tabform {
+  width: 600px;
+  height: 100px;
+  overflow: hidden;
+}
+.main .mid .tabform .btn {
+  height: 35px;
+  width: 515px;
+  margin: 33px auto 0 auto;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+}
+.main .mid .tabform .btn a {
+  display: block;
+  width: 100%;
+  color: #333333;
+  width: 257px;
+  border-right: 1px solid #ddd;
+  text-align: center;
+  font-size: 14px;
+  vertical-align: middle;
+}
+.main .mid .tabform .btn a i {
+  display: inline-block;
+  vertical-align: middle;
+  width: 15px;
+  height: 25px;
+  background: url(../img/loginIcon.gif) no-repeat -387px -5px;
+}
+.main .mid .tabform .btn .bb {
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 7px;
+  background: url(../img/loginIcon.gif) no-repeat left -37px;
+}
+.main .mid form {
+  display: block;
+  width: 600px;
+  margin-top: 10px;
+}
+.main .mid form .center {
+  width: 500px;
+  margin-left: 100px;
+}
+.main .mid form .center li {
+  width: 100%;
+  height: 52px;
+  line-height: 52px;
+  font-size: 16px;
+  border: 0px;
+  margin-bottom: 8px;
+}
+.main .mid form .center li span {
+  font-size: 12px;
+}
+.main .mid form .center li label {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 52px;
+  color: #000;
+  width: 100px;
+  text-align: right;
+  vertical-align: middle;
+}
+.main .mid form .center li input {
+  width: 240px;
+  border: 1px solid #dcdcdc;
+  height: 30px;
+  text-indent: 10px;
+}
+.main .mid form .center .ph span {
+  font-size: 12px;
+}
+.main .mid form .center .yanzheng {
+  overflow: hidden;
+}
+.main .mid form .center .yanzheng span {
+  font-size: 12px;
+  cursor: pointer;
+  float: right;
+  line-height: 55px;
+  margin-right: 25px;
+  color: blue;
+}
+.main .mid form .center .yanzheng canvas {
+  width: 70px;
+  height: 35px;
+  float: right;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.main .mid form .center .jiaoyan {
+  position: relative;
+}
+.main .mid form .center .jiaoyan input {
+  width: 146px;
+  text-align: center;
+}
+.main .mid form .center .jiaoyan i {
+  display: inline-block;
+  width: 15px;
+  height: 24px;
+  background: url(../img/loginIcon.gif) no-repeat -387px -5px;
+  position: absolute;
+  margin-top: 15px;
+  left: 110px;
+}
+.main .mid form .center .jiaoyan > a {
+  display: inline-block;
+  height: 31px;
+  line-height: 31px;
+  border: 1px solid #ddd;
+  padding: 0px 6px;
+  color: #646464;
+  width: 75px;
+  font-size: 12px;
+  text-align: center;
+  background: #f2f2f2;
+  border-radius: 3px;
+  margin-top: 11px;
+}
+.main .mid form .center .xieyi {
+  margin-left: 60px;
+}
+.main .mid form .center .xieyi span {
+  color: #325e8f;
+  cursor: pointer;
+}
+.main .mid form .center .reg_btn {
+  margin-left: 15px;
+  display: block;
+  width: 348px;
+  height: 42px;
+  text-align: center;
+  line-height: 42px;
+  color: #fff;
+  font-size: 14px;
+  border: 1px solid #a8221f;
+  border-radius: 2px;
+  background: #fe4a49;
+  background: linear-gradient(#ff6261, #fa413f);
+  background: -webkit-linear-gradient(#ff6261, #fa413f);
+  box-shadow: inset 0 0 1px rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.footer {
+  padding-top: 50px;
+  text-align: center;
+  line-height: 22px;
+  background-color: #eee;
+}
+.footer ul {
+  width: 400px;
+  margin: auto;
+}
+.footer ul li {
+  float: left;
+}
+.footer ul li a {
+  display: inline-block;
+  margin: 0 10px;
+  color: #333333;
+}
+.footer ul li:after {
+  content: '|';
+  margin: 0px 3px;
+}
+.footer ul li:last-child::after {
+  content: "";
+}
+
+/*# sourceMappingURL=reg.css.map */

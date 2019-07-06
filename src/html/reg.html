@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>reg.html</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/reg.css">
+    <script src="../js/common1.0.js"></script>
+    <script src="../lib/jquery-3.4.1.js"></script>
+    <script src="../js/reg.js"></script>
+</head>
+
+<body>
+    
+    <!-- heade -->
+    <div class="header">
+        <div class="mid">
+            <a href="http://www.gjw.com" class="logo">
+                <img src="http://www.gjw.com/Images/logo1.jpg" alt="购酒网">
+            </a>
+            <div class="fr login_line">
+                <a href="">如您已有账户</a>
+                <a href="http://order.gjw.com/login/login.html" id="blue">请登录</a>
+                <a href="http://www.gjw.com/help/show.htm"><i class="icon set"></i>帮助</a>
+                <a onclick="NTKF.im_openInPageChat('kf_9250_1462524671271')" rel="nofollow" id="red" href="#"><i
+                        class="icon service">
+                    </i>在线客服</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 主体部分 -->
+    <div class="main">
+        <div class="mid">
+            <div class="left">
+                <div class="tabform">
+                    <div class="btn">
+                        <a href="">
+                            <i class="mobile"></i>
+                            手机注册
+                        </a>
+                        <div class="bb"></div>
+                    </div>
+                </div>
+                <form action="">
+                    <ul class="center">
+                        <li class="ph" id="ph">
+                            <label for="">手机号：</label>
+                            <input type="text" id="phoneNum">
+                            <span></span>
+                        </li>
+                        <li class="yanzheng">
+                            <label for="">验证码：</label>
+                            <input id="yz_input" type="text">
+                            <span id="changeImg">换一张</span>
+                            <canvas id="canvas" width="120" height="40"></canvas>
+                        </li>
+                        <li class="jiaoyan">
+                            <label for="">校验码：</label>
+                            <input id="jyInput" type="text">
+                            <i></i>
+                            <a class="regCode_btn" id="regCode_btn" href="###">获取校验码</a>
+                            <span></span>
+                        </li>
+                        <li class="set_psd">
+                            <label for="">设置密码：</label>
+                            <input id="psd_input" type="text">
+                            <span></span>
+                        </li>
+                        <li class="check_psd">
+                            <label for="">确认密码：</label>
+                            <input id="check_input" type="text">
+                            <span></span>
+                        </li>
+                        <div class="xieyi">点击注册，表示您同意购酒网 <span>《服务协议》</span></div>
+                        <div class="reg_btn" id="reg_btn">注&nbsp;册</div>
+                    </ul>
+                </form>
+            </div>
+            <a class="right" href="">
+                <img src="../img/rlaojiu.jpg" alt="">
+            </a>
+        </div>
+    </div>
+
+    <!-- 底部 -->
+    <div class="footer">
+        <ul class="clearfix">
+            <li><a href="">关于我们</a></li>
+            <li><a href="">联系我们</a></li>
+            <li><a href="">友情链接</a></li>
+            <li><a href="">隐私声明</a></li>
+            <li><a class="last" href="">人才招聘</a></li>
+        </ul>
+        <div>Copyright©2009-2019 gjw.com, All Rights Reserved 购酒网(上海)供应链管理有限公司 版权所有</div>
+    </div>
+
+</body>
+
+</html>
