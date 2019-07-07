@@ -8,6 +8,7 @@ $sort = isset($_REQUEST['sort'])?$_REQUEST['sort']:'';
 
 include 'conn.php';
 
+//判断用户名是否存在
  if($sort == 'ifhas'){
     $sql = "SELECT * FROM userinfo WHERE NAME = '$name'";
     $res = $conn->query($sql);
@@ -20,7 +21,7 @@ include 'conn.php';
  }
     // echo json_encode($content,JSON_UNESCAPED_UNICODE);
 
-
+//写入用户信息
 if($sort == 'reg'){
     $sql = "INSERT INTO userinfo (NAME,pwd) VALUES('$name','$psd');";
     $res = $conn->query($sql);
@@ -28,6 +29,19 @@ if($sort == 'reg'){
         //真：插入成功
         echo 'yes';
     }else {
+        echo 'no';
+    }
+}
+
+//登录验证
+if($sort == 'login'){
+    $sql = "SELECT * FROM userinfo WHERE `name`='$name' AND pwd='$psd'";
+    $res = $conn->query($sql);
+    //查询到数据就是能登陆
+    if($res->num_rows) {
+        //查到数据：允许登陆
+        echo 'yes';
+    }else{
         echo 'no';
     }
 }

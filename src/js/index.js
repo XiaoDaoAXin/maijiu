@@ -1,5 +1,63 @@
 $(function () {
 
+    //判断是否已登录
+    updata();
+
+    function updata() {
+        if (getCookie('name')) {
+            $('#begin').text('欢迎！');
+            $('#user').text(getCookie('name'));
+            $('#reg').text('退出');
+        }
+    }
+
+
+
+    //点击跳转到注册登录页面 或 退出登录
+    skip();
+
+    function skip() {
+        $('#user').click(function () {
+            if ($('#user').text() == '登录') {
+                window.open('./html/login.html')
+            }
+        })
+        $('#reg').click(function () {
+            if ($('#reg').text == '注册') {
+                window.open('./html/reg.html')
+            }
+            if ($('#reg').text == '退出') {
+                removeCookie('name');
+                removeCookie('psd');
+                window.open('zhuye.html');
+            }
+
+        })
+    }
+
+    //右边导航栏出现特效
+    show();
+
+    function show() {
+        $('#inner a').hover(function () {
+            // $(this).children('.tips').fadeIn(200);
+            $(this).children('.tips').css({
+                display: 'block',
+            })
+            $(this).children('.tips').animate({
+                opacity: '1',
+                right: '32px'
+            }, 100)
+        }, function () {
+            $(this).children('.tips').css({
+                right: '83px',
+                display: 'none',
+                opacity: '0',
+            })
+        })
+    }
+
+
     // ---------大轮播图---------
     (function () {
         let now = 1;
@@ -176,7 +234,7 @@ $(function () {
         }
     }
 
-    //----------屏幕滚动出现头部搜索------------
+    //----------回到顶部------------
     goTop();
 
     function goTop() {

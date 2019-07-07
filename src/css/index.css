@@ -130,7 +130,7 @@ a {
 }
 
 .right_nav .inner  .tips {
-    /* display: none; */
+    display: none;
     height: 47px;
     line-height: 47px;
     width: 120px;
@@ -208,11 +208,11 @@ a {
 .right_nav .inner .fankui {
     padding: 12px 0px;
 }
-.right_nav .inner>a:hover .tips{
-    display: block;
+/* .right_nav .inner>a:hover .tips{
+    display: inline-block;
     opacity: 1;
     right: 32px;
-}
+} */
 
 
 
@@ -779,6 +779,7 @@ a {
     transition: all 2s;
     background-image: url(../img/banner1.jpg);
     background-position: center center;
+    background-size: 100%;
     background-repeat: no-repeat;
 }
 
