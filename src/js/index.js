@@ -43,8 +43,7 @@ $(function () {
             // $(this).children('.tips').fadeIn(200);
             $(this).children('.tips').css({
                 display: 'block',
-            })
-            $(this).children('.tips').animate({
+            }).children('.tips').animate({
                 opacity: '1',
                 right: '32px'
             }, 100)

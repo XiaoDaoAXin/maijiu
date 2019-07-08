@@ -1,0 +1,134 @@
+/* ----------------footer------------------------ */
+
+.footerMid,
+.v6_footer {
+    font-size: 13px;
+    font-family: "微软雅黑"
+}
+
+.v6_footer a {
+    color: #080808
+}
+
+.v6_footer a:hover {
+    color: #c40000
+}
+
+.footerAd {
+    display: block;
+    width: 100%;
+    height: 80px;
+    background-position: center center;
+    background-repeat: no-repeat
+}
+
+.footerMid {
+    height: 343px;
+    background: url(../img/footer_Bg.gif);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, .7)
+}
+
+.footer_tel {
+    margin-top: 20px;
+    width: 301px;
+    height: 75px;
+    background: url(../img/tel.png) left top no-repeat
+}
+
+.footer_serv {
+    margin: 61px 0 0 30px
+}
+
+.footer_center {
+    margin: 0 auto;
+    width: 1150px
+}
+
+.footerMid_t {
+    padding-top: 7px;
+    width: 1150px;
+    height: 113px;
+    border-bottom: 2px solid #787878
+}
+
+.footer_link {
+    margin-top: 40px
+}
+
+.footer_link dl {
+    float: left;
+    width: 170px;
+    +width: 158px
+}
+
+.footer_link dt {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 700
+}
+
+.footer_link a {
+    line-height: 24px;
+    color: #a9a9a9
+}
+
+.firstDl {
+    margin-left: 100px
+}
+
+.footer_link a.yellow {
+    color: #ffd312
+}
+
+.footer_qrCode {
+    width: 104px;
+    height: 104px
+}
+
+.qrCodeBox p {
+    margin-right: 20px;
+    margin-top: 15px;
+    color: #fff;
+}
+
+.qrCodeBox p,
+.tr {
+    text-align: right;
+
+}
+
+.copyright {
+    padding-top: 83px;
+    background: url(../img/baozheng_06.jpg) center top no-repeat;
+    line-height: 24px;
+}
+
+.friendLinkList {
+    width: 1200px;
+    margin: auto;
+    line-height: 32px;
+}
+
+.friendLinkList li {
+    height: 32px;
+    text-align: center;
+}
+
+.friendLinkList a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #080808;
+}
+
+.copyright p {
+    text-align: center;
+}
+
+.authentication {
+    margin-top: 10px;
+    width: 100%;
+    height: 54px;
+    background: url(../img/aut_06.jpg) no-repeat;
+    background-position: center center;
+}
