@@ -23,10 +23,10 @@ $(function () {
             }
         })
         $('#reg').click(function () {
-            if ($('#reg').text == '注册') {
+            if ($('#reg').text() == '注册') {
                 window.open('./html/reg.html')
             }
-            if ($('#reg').text == '退出') {
+            if ($('#reg').text() == '退出') {
                 removeCookie('name');
                 removeCookie('psd');
                 window.open('zhuye.html');
@@ -43,7 +43,8 @@ $(function () {
             // $(this).children('.tips').fadeIn(200);
             $(this).children('.tips').css({
                 display: 'block',
-            }).children('.tips').animate({
+            })
+            $(this).children('.tips').animate({
                 opacity: '1',
                 right: '32px'
             }, 100)
@@ -54,6 +55,17 @@ $(function () {
                 opacity: '0',
             })
         })
+    }
+
+    //---------判断渲染购物车内商品数量--------------
+    check_car_number();
+
+    function check_car_number() {
+        if (getCookie('number')) {
+            var goods_number = getCookie('number').split('&').length
+            $('#goods_number').text(goods_number);
+        }
+
     }
 
 

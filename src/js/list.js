@@ -77,7 +77,7 @@ $(function () {
                     var arr = JSON.parse(str);
                     var html = arr.map(function (item, key) {
                         return `<li class="proitem" data-id="${item.gid}">
-                        <a href="">
+                        <a href="###">
                         <img src="../img/${item.src}" alt="">
                         <span>${item.title}<em>${item.tips}</em></span>
                         <p class="pretype">
@@ -163,6 +163,14 @@ $(function () {
                 paixu = "time";
                 init();
             }
+        })
+
+        //点击商品获取id传到详情页面渲染
+        $('#goods_list').on('click','li',function(){
+            var id = $(this).attr('data-id');
+            // console.log(id);
+            // window.location.assign(`http://localhost:8888/malin%20item/maijiu/src/html/goods.html?id=${id}`)
+             window.open(`http://localhost:8888/malin%20item/maijiu/src/html/goods.html?id=${id}`)
         })
 
 
