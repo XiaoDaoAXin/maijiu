@@ -121,6 +121,8 @@ $(function () {
 
                     //--------------加入购物车--------------
                     addCar();
+
+                    //从写
                     var cookieId_arr = [];
                     var index;
 

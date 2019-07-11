@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>car</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/car.css">
+    <script src="../js/common1.0.js"></script>
+    <script src="../lib/jquery-3.4.1.js"></script>
+    <script src="../js/car.js"></script>
+</head>
+
+<body>
+    <div class="top">
+        <div class="content">
+            <div class="left">
+                <span class="login_btn">登录</span>
+                <span class="reg_btn">注册</span>
+            </div>
+            <ul class="right">
+                <li><a href="">购物车<span id="all_num">4件</span></a></li>
+                <li><a href="">我的订单</a></li>
+                <li><a href="">用户中心</a></li>
+                <li><a href="">帮助</a></li>
+                <li><a class="suggest" href="">提建议</a></li>
+                <li><a class="weibo" href="">微博</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="car_box clearfix">
+        <div class="title clearfix">
+            <h1>我的购物车</h1>
+            <span>单笔订单满100元免运费（香港、澳门、台湾、钓鱼岛地区和拆分订单除外）</span>
+            <a class="jiesuan" href=""></a>
+        </div>
+        <div class="main clearfix">
+            <dl class="goods_info">
+                <dt class="info_title">
+                    <span>
+                        <input id="CheckAll" class="check_ll" type="checkbox" checked="">
+                        全选
+                    </span>
+                    <span>商品 </span>
+                    <span>单价</span>
+                    <span>优惠</span>
+                    <span> 数量</span>
+                    <span>小计</span>
+                    <span> 操作</span>
+                </dt>
+                <dd id="goods_info_list">
+                    <!-- <div class="lis">
+                        <span><input class="check_cb" id="Checkbox6707" type="checkbox" checked="" value="6707"></span>
+                        <img src="../img/goods1.jpg" alt="">
+                        <a href=""> [52度 五粮液 五粮之旅 1275ml]</a>
+                        <span class="price">￥1099</span>
+                        <span class="youhui">-</span>
+                        <div class="ys_box">
+                            <div class="center clearfix">
+                                <span>-</span>
+                                <input type="text" value="1">
+                                <span>+</span>
+                            </div>
+                        </div>
+                        <span class="xiaoji">¥1,099.00</span>
+                        <div class="control_box">
+                            <span class="delete">删除</span>
+                            <span class="shoucang">收藏</span>
+                        </div>
+                    </div> -->
+                </dd>
+                <div class="juan">电子券在“去结算”页面中使用</div>
+                <div class="car_sum">
+                    <div class="center clearfix">
+                        <span class=" fl  btn_all">
+                            <input id="check_All" class="check_ll" type="checkbox" checked="">
+                            全选
+                        </span>
+                        <span class="fl delepro" id="delePro">
+                            <a id="del_checked" href="###">删除选中商品</a>
+                        </span>
+                        <span class="fl cearpro" id="creaPro">
+                            <a id="clear_car" href="">清空购物车</a>
+                        </span>
+                        应付商品金额：
+                        <font id="palyMoney">¥5297.00</font>
+                    </div>
+                </div>
+            </dl>
+            <div class="cart_btn">
+                <a href="" id="ABack" class="fl cbtn gono_btn"></a>
+                <span class="fl tip">商品价格和库存请以订单提交时为准</span>
+                <a id="go_pay" href=""></a>
+            </div>
+
+
+            <div class="you_need clearfix">
+                <div class="title">你可能还需要</div>
+                <ul>
+                    <li>
+                        <a href="">
+                            <img src="../img/list-10.jpg" alt="">
+                            <p class="name">53度 茅台 仁酒（2019年产）500ml</p>
+                            <p class="price">¥368</p>
+                            <p class="add_btn"></p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="../img/list-11.jpg" alt="">
+                            <p class="name">53度 茅台 仁酒（2019年产）500ml</p>
+                            <p class="price">¥368</p>
+                            <p class="add_btn"></p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="../img/list-12.jpg" alt="">
+                            <p class="name">53度 茅台 仁酒（2019年产）500ml</p>
+                            <p class="price">¥368</p>
+                            <p class="add_btn"></p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="../img/list-13.jpg" alt="">
+                            <p class="name">53度 茅台 仁酒（2019年产）500ml</p>
+                            <p class="price">¥368</p>
+                            <p class="add_btn"></p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="../img/list-14.jpg" alt="">
+                            <p class="name">53度 茅台 仁酒（2019年产）500ml</p>
+                            <p class="price">¥368</p>
+                            <p class="add_btn"></p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" style="border: none">
+                            <img src="../img/list-15.jpg" alt="">
+                            <p class="name">53度 茅台 仁酒（2019年产）500ml</p>
+                            <p class="price">¥368</p>
+                            <p class="add_btn"></p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="../img/list-16.jpg" alt="">
+                            <p class="name">53度 茅台 仁酒（2019年产）500ml</p>
+                            <p class="price">¥368</p>
+                            <p class="add_btn"></p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="../img/list-60.jpg" alt="">
+                            <p class="name">53度 茅台 仁酒（2019年产）500ml</p>
+                            <p class="price">¥368</p>
+                            <p class="add_btn"></p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="../img/list-31.jpg" alt="">
+                            <p class="name">53度 茅台 仁酒（2019年产）500ml</p>
+                            <p class="price">¥368</p>
+                            <p class="add_btn"></p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="../img/list-32.jpg" alt="">
+                            <p class="name">53度 茅台 仁酒（2019年产）500ml</p>
+                            <p class="price">¥368</p>
+                            <p class="add_btn"></p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="../img/list-33.jpg" alt="">
+                            <p class="name">53度 茅台 仁酒（2019年产）500ml</p>
+                            <p class="price">¥368</p>
+                            <p class="add_btn"></p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="../img/list-34.jpg" alt="">
+                            <p class="name">53度 茅台 仁酒（2019年产）500ml</p>
+                            <p class="price">¥368</p>
+                            <p class="add_btn"></p>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="foot">
+        <img class="sanbao" src="../img/sanBao_07.gif" alt="">
+        <ul>
+            <li><a href="">关于我们</a></li>
+            <li><a href="">联系我们 </a></li>
+            <li><a href="">友情链接</a></li>
+            <li><a href="">隐私声明</a></li>
+        </ul>
+        <div class="copyright">Copyright® 2009-2019 gjw.com, All Rights Reserved 购酒网(上海)供应链管理有限公司 版权所有</div>
+        <div class="pic">
+            <a href=""></a>
+            <a href=""></a>
+        </div>
+    </div>
+    
+    <div class="alert">库存为20件</div>
+</body>
+
+</html>

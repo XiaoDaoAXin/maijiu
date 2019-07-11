@@ -306,9 +306,9 @@
     z-index: 999;
 }
 
-/* .itemNav .listNav:hover>ul {
+.itemNav .listNav:hover>ul {
     display: block;
-} */
+}
 
 
 .itemNav .tejia {
