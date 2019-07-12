@@ -1,11 +1,11 @@
 <?php
 
 // $min = isset($_GET['min'])?$_GET['min']:'';
- $gid=isset($_REQUEST['gid'])? $_REQUEST['gid']:'';
+//  $gid=isset($_REQUEST['gid'])? $_REQUEST['gid']:'';
 //  echo $gid;
 include 'conn.php';
 
-$sql = "SELECT * FROM baijiu WHERE gid = '$gid';";
+$sql = "SELECT * FROM `car`;";
 
 $res = $conn->query($sql);
 

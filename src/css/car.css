@@ -317,9 +317,12 @@ body {
   font-size: 18px;
   text-indent: 20px;
   font-weight: 700;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #EAEAEA;
+  background-color: #F8F8F8;
 }
 .car_box .main .you_need > ul {
-  margin-top: 20px;
+  padding-bottom: 20px;
 }
 .car_box .main .you_need > ul > li {
   float: left;
@@ -330,7 +333,6 @@ body {
   height: 234px;
   border-right: 1px solid #EAEAEA;
   text-align: center;
-  padding-bottom: 20px;
 }
 .car_box .main .you_need > ul > li > a > img {
   width: 100px;

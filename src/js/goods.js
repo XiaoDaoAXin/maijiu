@@ -70,6 +70,7 @@ $(function () {
                     $('.goods_name').text(arr[0].title); //商品名称渲染
                     $('#price').text(arr[0].price); //价钱渲染
                     $('.all_discuss').text(arr[0].dis) //评价渲染  
+                    $('#goods_num').attr('kucun', arr[0].kucun) //添加库存属性
                     for (let i = 0; i < $('#btns li').length; i++) { //详情图渲染
                         var str1 = arr[0].detail
                         var pic_arr = str1.split('&');
@@ -84,7 +85,7 @@ $(function () {
 
                     // kucun = arr[0].kucun;
                     // console.log(kucun);
-                    //---------改变数量存在cookies-----------
+                    //---------改变数量-----------
                     changeNum();
 
                     function changeNum() {
@@ -122,37 +123,64 @@ $(function () {
                     //--------------加入购物车--------------
                     addCar();
 
-                    //从写
-                    var cookieId_arr = [];
-                    var index;
-
-
+                    //重写
                     function addCar() {
-                        var num = $('#goods_num').val('1');
-                        var cookieId = '';
                         $('.addcar').click(function () {
-                            getId();
-                            cookieId = getCookie('id');
-                            if (cookieId) {
-                                cookieId_arr = cookieId.split('&');
-                                index = cookieId_arr.indexOf(id);
-                                if (index >= 0) {
-
-                                } else {
-                                    cookieId += `&${id}`;
-                                    setCookie('id', cookieId);
-                                    num = $('#goods_num').val().trim();
-                                    num = getCookie('number') + `&${num}`;
-                                    setCookie('number', num);
+                            var gid = getId();
+                            var title = $('.goods_name').eq(0).text();
+                            var src = $('.goods_picture').attr('src').slice(7);
+                            var num = $('#goods_num').val();
+                            var price = $('#price').text();
+                            var kucun = $('#goods_num').attr('kucun');
+                            // console.log(title, src, num, price)
+                            $.ajax({
+                                type: 'post',
+                                url: '../api/addToCart.php',
+                                data: {
+                                    gid: gid,
+                                    title: title,
+                                    num: num,
+                                    src: src,
+                                    price: price,
+                                    kucun: kucun
+                                },
+                                success: function (str) {
+                                    console.log(str)
                                 }
-                            } else {
-                                setCookie('id', id);
-                                num = $('#goods_num').val().trim();
-                                setCookie('number', num); //存入cookie
-                            }
-                            check_car_number();
+                            })
                         })
                     }
+
+                    // var cookieId_arr = [];
+                    // var index;
+
+
+                    // function addCar() {
+                    //     var num = $('#goods_num').val('1');
+                    //     var cookieId = '';
+                    //     $('.addcar').click(function () {
+                    //         getId();
+                    //         cookieId = getCookie('id');
+                    //         if (cookieId) {
+                    //             cookieId_arr = cookieId.split('&');
+                    //             index = cookieId_arr.indexOf(id);
+                    //             if (index >= 0) {
+
+                    //             } else {
+                    //                 cookieId += `&${id}`;
+                    //                 setCookie('id', cookieId);
+                    //                 num = $('#goods_num').val().trim();
+                    //                 num = getCookie('number') + `&${num}`;
+                    //                 setCookie('number', num);
+                    //             }
+                    //         } else {
+                    //             setCookie('id', id);
+                    //             num = $('#goods_num').val().trim();
+                    //             setCookie('number', num); //存入cookie
+                    //         }
+                    //         check_car_number();
+                    //     })
+                    // }
                 }
             })
 
@@ -160,8 +188,6 @@ $(function () {
         }
 
         //---------判断渲染购物车内商品数量--------------
-        check_car_number();
-
         function check_car_number() {
             if (getCookie('number')) {
                 var goods_number = getCookie('number').split('&').length
@@ -266,7 +292,7 @@ $(function () {
                 }
             })
             $('#reg1').click(function () {
-                if ($('#reg1').text() =='注册') {
+                if ($('#reg1').text() == '注册') {
                     window.open('reg.html')
                 }
                 if ($('#reg').text() == '退出') {
